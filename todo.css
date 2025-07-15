@@ -1,0 +1,98 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+/* Container */
+.todobox {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    width: 400px;
+    max-width: 90%;
+}
+
+/* Heading */
+.todobox h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00ffaa;
+}
+
+/* Input and button container */
+.todo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.todo input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+}
+
+.todo button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #00ffaa;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    color: #000;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.todo button:hover {
+    background-color: #00cc88;
+}
+
+/* List */
+.list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list li {
+    background-color: #2c2c2c;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.list li:hover {
+    transform: scale(1.02);
+    background-color: #333;
+}
+
+/* Delete Icon */
+.list li i {
+    color: #ff4444;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.list li i:hover {
+    color: #ff0000;
+}
